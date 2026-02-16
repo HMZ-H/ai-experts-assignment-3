@@ -72,11 +72,12 @@ Create `EXPLANATION.md` (max 250 words) containing:
    ```bash
    pip install -r requirements.txt
    ```
+   (If `pip` is not found, use `python -m pip install -r requirements.txt`.)
 3. Run the test suite:
    ```bash
    pytest -v
    ```
-   Or from project root: `python -m pytest tests/ -v`
+   Or from project root: `python -m pytest tests/ -v` (use this if `pytest` is not on your PATH).
 
 ## How to build and run tests with Docker
 
@@ -88,7 +89,7 @@ Create `EXPLANATION.md` (max 250 words) containing:
    ```bash
    docker run --rm ai-experts-assignment
    ```
-   To run tests explicitly: `docker run --rm ai-experts-assignment pytest -v`
+   To run tests explicitly: `docker run --rm ai-experts-assignment python -m pytest -v`
 
 ## Submission
 
